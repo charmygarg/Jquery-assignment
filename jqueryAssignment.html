@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="jqueryAssignment.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <script src="jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      $(".readButton").click(function() {
+        $(".read").click(function() {
+          $(this).hide();
+        });
+        $(".read").animate({
+          height: 'toggle'
+      });
+    });
+    $(".gridP").hover(function(){
+        $(this).css("color", "blue");
+        }, function(){
+        $(this).css("color", "pink");
+    });
+    $(".topics").click(function() {
+        alert("Text: " + $(".gridP").text());
+
+    });
+    $(".topics").click(function() {
+      $(".gridP").hide("slow", function() {
+      });
+    });
+    $(".topics").click(function() {
+      $(".gridP").css("color", "yellow")
+       .slideUp(2000)
+       .slideDown(2000);
+      });
+      $("h2").click(function(){
+        $("h2").hide();
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top menu" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand knoldus" href="http://www.knoldus.com/home.knol">Kn<span>o</span>ldus</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="http://www.knoldus.com/about/ctoinsights.knol">About</a></li>
+                  <li><a href="http://www.knoldus.com/work/services.knol">Services</a></li>
+                  <li><a href="http://www.knoldus.com/learn/training.knol">Learn</a></li>
+                  <li><a href="http://www.knoldus.com/work/services/why-knoldus-for-scala.knol">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item">
+      <img src="mobile.jpg" alt="Mobile">
+      <div class="header-text hidden-xs">
+        <div class="col-md-12 col-xs-12 text-center">
+          <h2>DATABRICKS GOLD PARTNER</h2>
+          <h3 class="read">We are proud to be partner with creators of Spark.</h3>
+             <div>
+              <a class="btn btn-theme btn-sm btn-min-block readButton">Read More</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+      <img src="foot.jpg" alt="Foot">
+      <div class="header-text hidden-xs">
+        <div class="col-md-12 col-xs-12 text-center">
+              <h2>LIGHTBEND SELECT PARTNER</h2>
+          <h3 class="read">We are proud to be partner with the creators of Scala and Akka.</h3>
+             <div>
+              <a class="btn btn-theme btn-sm btn-min-block readButton">Read More</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item active">
+      <img src="pc.jpg" alt="PC">
+      <div class="header-text hidden-xs">
+        <div class="col-md-12 col-xs-12 text-center">
+          <h2>Welcome to Knoldus!!</h2>
+          <h3 class="read">EXPERTS IN DELIVERING MISSION CRITICAL SYSTEMS</h3>
+             <div>
+              <a class="btn btn-theme btn-sm btn-min-block readButton">Read More</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-xs-6 blocks" style="background-color:#1D7E8D;">
+        <h3 class="topics">Akka</h3>
+        <p class="gridP" id="gridA">Akka is a free and open-source toolkit and runtime
+          simplifying the construction of concurrent and distributed applications on the JVM.
+        Language bindings exist for both Java and Scala. Akka is written in Scala</p>
+    </div>
+    <div class="col-md-3 col-xs-6 blocks" style="background-color:#CB4335;">
+        <h3 class="topics">Scala</h3>
+        <p class="gridP">Scala is an acronym for “Scalable Language”. This means that Scala grows with you.
+          You can play with it by typing one-line expressions and observing the results.
+           There’s a REPL and IDE worksheets for quick feedback.</p>
+    </div>
+    <div class="col-md-3 col-xs-6 blocks" style="background-color:#196F3D;">
+        <h3 class="topics">Play</h3>
+        <p class="gridP" id="gridA">Play is based on a lightweight, stateless, web-friendly architecture.Built on Akka,
+          Play provides predictable and minimal resource consumption (CPU, memory, threads) for highly-scalable applications.</p>
+    </div>
+    <div class="col-md-3 col-xs-6 blocks" style="background-color:#DC7633;">
+        <h3 class="topics">Spark</h3>
+        <p class="gridP">Apache® Spark™ is a powerful open source processing engine built around speed, ease of use, and
+           sophisticated analytics. It was originally developed at UC Berkeley in 2009.Apache Spark is 100% open source.
+           </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Copyright 2016-17 © Knoldus</p>
+</footer>
+
+</body>
+</html>

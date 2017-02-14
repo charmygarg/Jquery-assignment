@@ -1,0 +1,93 @@
+
+span {
+  color: #1586A5;
+  font-size: 30px;
+}
+
+.menu {
+  background-color: black!important;
+  color: white!important;
+}
+
+div ul li a:hover {
+  background-color: #1D7E8D!important;
+}
+
+div a.knoldus {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+div h3 {
+  color: white;
+  font-weight: bold;
+}
+
+p.gridP {
+  color: white;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 495px!important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus,
+ .navbar-inverse .navbar-nav>.active>a:hover {
+
+    background-color: #1D7E8D!important;
+}
+
+footer p {
+  background-color: black;
+  color: grey;
+  text-align: center;
+}
+
+html {
+  background-color: black!important;
+}
+
+.blocks:hover {
+  background-color: black!important;
+}
+
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.header-text h2 {
+  font-size: 40px;
+  display:block;
+}
+
+.header-text h2 {
+  padding: 10px;
+}
+
+.header-text h3 {
+	padding: 15px;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
